@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F043EDCBCD477785FFCF55 /* FriendRememberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818031849F754F3B9ED93D50 /* FriendRememberApp.swift */; };
+		435D3864518447F0AE387E15 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB138C04D5A4FC5AFD3796B /* Friend.swift */; };
+		374AAF31FD35407D94A6AC6C /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76086E04C5447AAD706381 /* FriendListView.swift */; };
+		917835BB3C594A0CB3AB82F5 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28678E4C1A743DCAF4E4A5B /* FriendDetailView.swift */; };
+		AE8B632D13F94C41A3E7D7A3 /* FriendFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086F21FDC1B4D2BA0DB944E /* FriendFormView.swift */; };
+		00117151A0E743CCAE88AE72 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C6C04F58064BC989EF3093 /* LocationManager.swift */; };
+		263A077F5EFB4D3ABC2D599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDC312A5F6E4010A2808349 /* Assets.xcassets */; };
+		F0CEF1C968F6433BA409311E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A308530CE924C5CA48C0A5F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8FB2FF0BC41B48B2B7ECEBBD /* FriendRemember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendRemember.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		818031849F754F3B9ED93D50 /* FriendRememberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRememberApp.swift; sourceTree = "<group>"; };
+		EDB138C04D5A4FC5AFD3796B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		6F76086E04C5447AAD706381 /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
+		F28678E4C1A743DCAF4E4A5B /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+		6086F21FDC1B4D2BA0DB944E /* FriendFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFormView.swift; sourceTree = "<group>"; };
+		25C6C04F58064BC989EF3093 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0CDC312A5F6E4010A2808349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A308530CE924C5CA48C0A5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004F71251C6245E98DBECF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ED1CFC7993D4BC18D2C9351 = {
+			isa = PBXGroup;
+			children = (
+				BEA44D52E9934C78A390F940 /* FriendRemember */,
+				69CC8DA8C62C4CE8A3BE6768 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69CC8DA8C62C4CE8A3BE6768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB2FF0BC41B48B2B7ECEBBD /* FriendRemember.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA44D52E9934C78A390F940 /* FriendRemember */ = {
+			isa = PBXGroup;
+			children = (
+				818031849F754F3B9ED93D50 /* FriendRememberApp.swift */,
+				DC631584A86B4D7B9C35C1F5 /* Models */,
+				1DDCC7E9C7CF40E393595CA6 /* Views */,
+				3AF06D5102144C01A3F138F9 /* Support */,
+				0CDC312A5F6E4010A2808349 /* Assets.xcassets */,
+				6F3354D31DFC4AF0B1940877 /* Preview Content */,
+			);
+			path = FriendRemember;
+			sourceTree = "<group>";
+		};
+		DC631584A86B4D7B9C35C1F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB138C04D5A4FC5AFD3796B /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DDCC7E9C7CF40E393595CA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F76086E04C5447AAD706381 /* FriendListView.swift */,
+				F28678E4C1A743DCAF4E4A5B /* FriendDetailView.swift */,
+				6086F21FDC1B4D2BA0DB944E /* FriendFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AF06D5102144C01A3F138F9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				25C6C04F58064BC989EF3093 /* LocationManager.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6F3354D31DFC4AF0B1940877 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A308530CE924C5CA48C0A5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CAD2721775340AEAABABA7E /* FriendRemember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98A9D01DB4B4719864CA10A /* Build configuration list for PBXNativeTarget "FriendRemember" */;
+			buildPhases = (
+				86BC5E9E399641C4B8349DA9 /* Sources */,
+				004F71251C6245E98DBECF17 /* Frameworks */,
+				3DAB6E6BD61E47198C9C4B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriendRemember;
+			productName = FriendRemember;
+			productReference = 8FB2FF0BC41B48B2B7ECEBBD /* FriendRemember.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB5B571E4719410E8A2FF0B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1CAD2721775340AEAABABA7E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EAA350D78DA341C19B51E15F /* Build configuration list for PBXProject "FriendRemember" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ED1CFC7993D4BC18D2C9351;
+			productRefGroup = 69CC8DA8C62C4CE8A3BE6768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CAD2721775340AEAABABA7E /* FriendRemember */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DAB6E6BD61E47198C9C4B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CEF1C968F6433BA409311E /* Preview Assets.xcassets in Resources */,
+				263A077F5EFB4D3ABC2D599D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86BC5E9E399641C4B8349DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374AAF31FD35407D94A6AC6C /* FriendListView.swift in Sources */,
+				435D3864518447F0AE387E15 /* Friend.swift in Sources */,
+				23F043EDCBCD477785FFCF55 /* FriendRememberApp.swift in Sources */,
+				917835BB3C594A0CB3AB82F5 /* FriendDetailView.swift in Sources */,
+				AE8B632D13F94C41A3E7D7A3 /* FriendFormView.swift in Sources */,
+				00117151A0E743CCAE88AE72 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BD5F2BEE7CA9485DB209FBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D603E1FE37F47EDAEA92F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFDA62DD0BC1412AB9DE384D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendRemember/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Friend Remember";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Friend Remember uses your location to help you remember where you met a friend.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.friendremember.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6A7ADA08321407DBF61079F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FriendRemember/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Friend Remember";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Friend Remember uses your location to help you remember where you met a friend.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.friendremember.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA350D78DA341C19B51E15F /* Build configuration list for PBXProject "FriendRemember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5F2BEE7CA9485DB209FBB6 /* Debug */,
+				5D603E1FE37F47EDAEA92F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98A9D01DB4B4719864CA10A /* Build configuration list for PBXNativeTarget "FriendRemember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDA62DD0BC1412AB9DE384D /* Debug */,
+				B6A7ADA08321407DBF61079F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB5B571E4719410E8A2FF0B6 /* Project object */;
+}
