@@ -34,8 +34,15 @@
     return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   }
 
+  // 静的に書いてある「UI用語集」（index.html）は、ホーム画面のときだけ見せる
+  const dictionary = document.getElementById("dictionary");
+  function showDictionary(visible) {
+    if (dictionary) dictionary.hidden = !visible;
+  }
+
   function view(html) {
     app.innerHTML = html;
+    showDictionary(false);
     window.scrollTo(0, 0);
     const heading = app.querySelector("h1, h2");
     if (heading) {
@@ -98,6 +105,7 @@
       </footer>
     `);
 
+    showDictionary(true);
     app.querySelectorAll("[data-start]").forEach((b) => b.addEventListener("click", () => startQuiz(b.dataset.start, "normal")));
     const review = app.querySelector("[data-review]");
     if (review) review.addEventListener("click", () => startQuiz("all", "review"));
