@@ -199,6 +199,7 @@
         <h3 class="answer-name">${esc(term.name)} <span class="muted">${esc(term.kana)}</span></h3>
         ${q.type !== "visual" ? `<div class="demo-frame demo-frame-sm"><div data-stage></div></div>` : ""}
         <p>${esc(term.desc)}</p>
+        ${originLine(term)}
         ${q.explain ? `<p class="explain">${esc(q.explain)}</p>` : ""}
         ${!correct ? `<p class="chosen-note"><b>選んだ「${esc(chosen.name)}」は：</b>${esc(chosen.desc)}</p>` : ""}
         ${promptBox(term)}
@@ -217,6 +218,10 @@
     session.index++;
     if (session.index < session.questions.length) renderQuestion();
     else renderResult();
+  }
+
+  function originLine(term) {
+    return `<p class="origin"><span class="origin-label">名前の由来</span>${esc(term.origin)}</p>`;
   }
 
   function promptBox(term) {
@@ -274,7 +279,7 @@
               return `<li class="result-item">
                 <span class="mark ${a.correct ? "mark-ok" : "mark-ng"}" aria-label="${a.correct ? "正解" : "不正解"}">${a.correct ? "✓" : "✗"}</span>
                 <details><summary><b>${esc(t.name)}</b> <span class="muted">${esc(t.kana)}</span></summary>
-                  <p>${esc(t.desc)}</p>${promptBox(t)}</details>
+                  <p>${esc(t.desc)}</p>${originLine(t)}${promptBox(t)}</details>
               </li>`;
             })
             .join("")}
@@ -311,6 +316,7 @@
                 ${engine.isMastered(progress[t.id]) ? `<span class="tag tag-done">覚えた</span>` : ""}</div>
               <p class="muted">${esc(t.kana)}</p>
               <p>${esc(t.desc)}</p>
+              ${originLine(t)}
               ${promptBox(t)}
             </div>
           </article>`

@@ -491,6 +491,26 @@ h1 {
   font-size: 0.92rem;
 }
 
+.origin {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  font-size: 0.93rem;
+}
+
+.term-body p.origin {
+  margin-bottom: 8px;
+}
+
+.origin-label {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .prompt-box {
   margin: 14px 0;
   padding: 12px 14px;

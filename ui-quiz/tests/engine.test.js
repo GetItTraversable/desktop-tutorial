@@ -33,7 +33,7 @@ test("用語の id は重複しない", () => {
 test("どの用語にも必要な項目がそろっている", () => {
   const levelIds = LEVELS.map((l) => l.id);
   for (const t of TERMS) {
-    for (const key of ["name", "kana", "desc", "scenario", "prompt"]) {
+    for (const key of ["name", "kana", "origin", "desc", "scenario", "prompt"]) {
       assert.ok(t[key] && t[key].length > 0, `${t.id}.${key}`);
     }
     assert.ok(levelIds.includes(t.level), `${t.id}.level`);
