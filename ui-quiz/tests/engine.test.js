@@ -140,3 +140,8 @@ test("復習モードは間違えた用語だけを出す", () => {
   const qs = engine.buildSession({ level: "all", mode: "review", count: 10, progress: p, rng: seeded(5) });
   assert.deepEqual(plain(qs.map((q) => q.termId).sort()), ["drawer", "toast"]);
 });
+
+test("index.html の UI用語集が data.js と一致している", () => {
+  const { build, INDEX } = require("../tools/build-dictionary.js");
+  assert.equal(fs.readFileSync(INDEX, "utf8"), build(), "node ui-quiz/tools/build-dictionary.js を実行してください");
+});

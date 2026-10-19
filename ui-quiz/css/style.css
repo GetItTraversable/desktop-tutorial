@@ -686,6 +686,80 @@ h1 {
   border-color: transparent;
 }
 
+/* ── UI用語集（index.html に静的に書いてある部分）── */
+.dictionary {
+  padding-top: 0;
+}
+
+.dict {
+  display: grid;
+  gap: 10px;
+}
+
+.dict-level {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--lv);
+  border-radius: 12px;
+}
+
+.dict-level summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.dict-level summary h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--lv);
+}
+
+.dict-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0 16px 8px;
+}
+
+.dict-item {
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+
+.dict-item dt {
+  margin-bottom: 2px;
+}
+
+.dict-name {
+  font-weight: 700;
+}
+
+.dict-kana {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.dict-item dd {
+  margin: 0;
+  font-size: 0.93rem;
+}
+
+.dict-item .dict-origin {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.dict-origin span {
+  margin-right: 8px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 /* ── スマホ ── */
 @media (max-width: 640px) {
   .levels {

@@ -1,0 +1,108 @@
+<!doctype html>
+<!--
+  SNSで共有したときに表示する画像（og-image.png）の元。
+  1200×630 でスクリーンショットを撮って ui-quiz/og-image.png に保存する。
+-->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        font-family: "Hiragino Sans", "Noto Sans JP", "IPAGothic", sans-serif;
+        background: #f5f6fa;
+        color: #1a1d26;
+      }
+      .card {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 48px;
+        align-items: center;
+        padding: 64px 72px;
+        border-top: 14px solid #4b45d6;
+      }
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #4b45d6;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      h1 {
+        margin: 0 0 24px;
+        font-size: 88px;
+        line-height: 1.1;
+      }
+      .lead {
+        margin: 0;
+        color: #5a6273;
+        font-size: 30px;
+        line-height: 1.6;
+      }
+      .levels {
+        display: flex;
+        gap: 12px;
+        margin-top: 32px;
+      }
+      .levels span {
+        padding: 6px 18px;
+        border: 3px solid currentColor;
+        border-radius: 99px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .names {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-content: center;
+      }
+      .names span {
+        padding: 12px 22px;
+        background: #fff;
+        border: 2px solid #dde1ea;
+        border-radius: 14px;
+        font-size: 30px;
+        font-weight: 700;
+        box-shadow: 0 4px 14px rgb(20 24 40 / 0.07);
+      }
+      .names span.hi {
+        border: 3px dashed #e8890c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <p class="eyebrow">AIでアプリを作る人のための</p>
+        <h1>UIの名前<br>クイズ</h1>
+        <p class="lead">実際に動くUIを見ながら、<br>AIへの指示に使える43語を覚えよう</p>
+        <div class="levels">
+          <span style="color: #16834a">初級</span>
+          <span style="color: #2b64d1">中級</span>
+          <span style="color: #9b3fc8">上級</span>
+        </div>
+      </div>
+      <div class="names">
+        <span>Modal</span>
+        <span class="hi">Toast</span>
+        <span>Drawer</span>
+        <span>Tooltip</span>
+        <span>Breadcrumb</span>
+        <span>Accordion</span>
+        <span class="hi">Bottom sheet</span>
+        <span>Combobox</span>
+        <span>Skeleton</span>
+        <span>Carousel</span>
+        <span>Stepper</span>
+      </div>
+    </div>
+  </body>
+</html>

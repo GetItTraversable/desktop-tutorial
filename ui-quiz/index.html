@@ -3,14 +3,291 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>UIの名前クイズ</title>
-    <meta name="description" content="AIでアプリやWebサイトを作る人のための、UI部品の名前を実際に動くUIで覚えるクイズ。">
+    <title>UIの名前クイズ｜AIでアプリを作る人のためのUI用語集</title>
+    <meta name="description" content="Modal、Toast、Drawer…画面の部品の名前、言えますか？実際に動くUIを見ながら、AIへの指示に使えるUI用語43語をクイズで覚えられます。初級・中級・上級、無料・登録不要。">
+    <link rel="canonical" href="https://getittraversable.github.io/desktop-tutorial/ui-quiz/">
+
+    <!-- SNSで共有したときのカード表示 -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="UIの名前クイズ">
+    <meta property="og:title" content="UIの名前クイズ｜AIでアプリを作る人のためのUI用語集">
+    <meta property="og:description" content="実際に動くUIを見ながら、AIへの指示に使えるUI用語43語をクイズで覚えよう。初級・中級・上級、無料・登録不要。">
+    <meta property="og:url" content="https://getittraversable.github.io/desktop-tutorial/ui-quiz/">
+    <meta property="og:image" content="https://getittraversable.github.io/desktop-tutorial/ui-quiz/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="UIの名前クイズ。Modal、Toast、Drawer など43語を実際に動くUIで覚える">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": "UIの名前クイズ",
+        "description": "AIでアプリやWebサイトを作る人のための、UI部品の名前を実際に動くUIで覚えるクイズ。",
+        "url": "https://getittraversable.github.io/desktop-tutorial/ui-quiz/",
+        "inLanguage": "ja",
+        "learningResourceType": "Quiz",
+        "educationalLevel": ["初級", "中級", "上級"],
+        "teaches": "UIデザインの部品の名前と使い分け",
+        "isAccessibleForFree": true
+      }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/demos.css">
   </head>
   <body>
-    <main id="app" class="container"></main>
-    <noscript><p class="container">このクイズを動かすにはJavaScriptを有効にしてください。</p></noscript>
+    <main id="app" class="container">
+      <!-- JavaScript が動くと、この中身はクイズの画面に置き換わる -->
+      <section class="hero">
+        <p class="eyebrow">AIでアプリを作る人のための</p>
+        <h1>UIの名前クイズ</h1>
+        <p class="lead">「あの、画面の端からにゅっと出るやつ」を「Drawer」と言えるようになると、AIへの指示が一気に正確になります。実際に動くUIを見ながら、名前を覚えましょう。</p>
+      </section>
+      <noscript><p>クイズで遊ぶにはJavaScriptを有効にしてください。下の用語集は、そのまま読めます。</p></noscript>
+    </main>
+
+    <section id="dictionary" class="container dictionary" aria-labelledby="dictionary-title">
+      <h2 id="dictionary-title" class="section-title">UI用語集（43語）</h2>
+      <p class="muted">クイズに出てくるUIの名前・説明・名前の由来の一覧です。レベル名を押すと開きます。</p>
+      <div class="dict">
+        <!-- dictionary:start（tools/build-dictionary.js で生成。直接編集しない） -->
+        <details class="dict-level level-beginner">
+          <summary><h3>初級（16語）</h3><span class="muted small">まずはここから。どのアプリにもある基本の部品</span></summary>
+          <dl class="dict-list">
+            <div class="dict-item" id="term-button">
+              <dt><span class="dict-name">Button</span> <span class="dict-kana">ボタン</span></dt>
+              <dd>押すと処理を実行する部品。保存・送信など、操作のきっかけになる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>服のボタンや、機械の「押しボタン」から。押すと何かが起きる、あのボタンをそのまま画面に持ってきた。</dd>
+            </div>
+            <div class="dict-item" id="term-text-field">
+              <dt><span class="dict-name">Text field</span> <span class="dict-kana">テキストフィールド</span></dt>
+              <dd>1行の文字を入力する枠。上のラベルや、中に薄く表示する例文（プレースホルダー）と組み合わせて使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>field は書類の「記入欄」のこと。申込書の「お名前：＿＿＿」の空欄が、画面の中に引っ越してきた。</dd>
+            </div>
+            <div class="dict-item" id="term-checkbox">
+              <dt><span class="dict-name">Checkbox</span> <span class="dict-kana">チェックボックス</span></dt>
+              <dd>四角い箱にチェックを入れる部品。複数の選択肢を同時に選べる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>紙のアンケートの、✓を書き込む四角い箱（box）から。選びたいものに印をつける感覚そのまま。</dd>
+            </div>
+            <div class="dict-item" id="term-radio">
+              <dt><span class="dict-name">Radio button</span> <span class="dict-kana">ラジオボタン</span></dt>
+              <dd>丸い印のついた選択肢。グループの中から1つだけを選ぶ。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>昔のカーラジオの選局ボタンが由来。1つ押し込むと、前に押していたボタンがポンと戻るので、同時に1つしか選べない。</dd>
+            </div>
+            <div class="dict-item" id="term-toggle">
+              <dt><span class="dict-name">Toggle switch</span> <span class="dict-kana">トグルスイッチ</span></dt>
+              <dd>つまみを左右に動かしてオン・オフを切り替えるスイッチ。押した瞬間に設定が反映されるのが普通。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>toggle は「パチッと切り替える」の意味。部屋の照明についている、レバーを倒すスイッチと同じ仕組み。</dd>
+            </div>
+            <div class="dict-item" id="term-select">
+              <dt><span class="dict-name">Dropdown (Select)</span> <span class="dict-kana">ドロップダウン（セレクト）</span></dt>
+              <dd>押すと選択肢の一覧が開き、その中から1つを選ぶ部品。選択肢が多くても場所を取らない。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>押すと一覧が下に「落ちてくる（drop down）」ように開くから。Select は「選ぶ」。</dd>
+            </div>
+            <div class="dict-item" id="term-navbar">
+              <dt><span class="dict-name">Navigation bar</span> <span class="dict-kana">ナビゲーションバー</span></dt>
+              <dd>画面の上部に横に並ぶ、サイトの主なページへのリンク。ロゴもここに置くことが多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>navigation は船の「航海術」。サイトという海を迷わず進むための、羅針盤みたいな帯。</dd>
+            </div>
+            <div class="dict-item" id="term-hamburger">
+              <dt><span class="dict-name">Hamburger menu</span> <span class="dict-kana">ハンバーガーメニュー</span></dt>
+              <dd>三本線のアイコン。押すと隠れていたメニューが出てくる。スマホのような狭い画面でよく使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>三本線が、パン・ハンバーグ・パンを重ねたハンバーガーに見えるから。1981年のパソコン「Xerox Star」で生まれたアイコンと言われる。</dd>
+            </div>
+            <div class="dict-item" id="term-card">
+              <dt><span class="dict-name">Card</span> <span class="dict-kana">カード</span></dt>
+              <dd>画像・タイトル・短い説明などを1つの枠にまとめた部品。一覧に並べて使うことが多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>トランプや名刺、図書館の目録カードのように、1枚に情報をぎゅっとまとめるから。</dd>
+            </div>
+            <div class="dict-item" id="term-modal">
+              <dt><span class="dict-name">Modal dialog</span> <span class="dict-kana">モーダル（ダイアログ）</span></dt>
+              <dd>画面の中央に開く小窓。後ろの画面は暗くなり、閉じるまで他の操作ができない。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>「モード（mode）」から。開いている間、アプリは「あなたの返事待ちモード」になり、他のことは一切受け付けない。</dd>
+            </div>
+            <div class="dict-item" id="term-toast">
+              <dt><span class="dict-name">Toast</span> <span class="dict-kana">トースト</span></dt>
+              <dd>画面の端に一時的に出て、数秒で自動的に消える短い通知。作業の邪魔をしない。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>トースターからパンがポンッと飛び出すように、画面の下からひょこっと現れるから。焼き上がったらすぐ食べられるように、すぐ消える。</dd>
+            </div>
+            <div class="dict-item" id="term-tabs">
+              <dt><span class="dict-name">Tabs</span> <span class="dict-kana">タブ</span></dt>
+              <dd>見出しを横に並べ、押すとその下の内容が切り替わる部品。1つの画面の中で情報を整理する。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>ノートやファイルの端についている「見出しの耳（インデックスタブ）」から。耳をつまんでページを開く感覚。</dd>
+            </div>
+            <div class="dict-item" id="term-tooltip">
+              <dt><span class="dict-name">Tooltip</span> <span class="dict-kana">ツールチップ</span></dt>
+              <dd>マウスを乗せたり、キーボードで選んだりしたときに出る小さな補足の吹き出し。中に押せるものは入れない。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>tool（道具＝ボタン）の tip（ちょっとしたコツ・ヒント）。道具の使い方を、横からこっそり耳打ちしてくれる。</dd>
+            </div>
+            <div class="dict-item" id="term-badge">
+              <dt><span class="dict-name">Badge</span> <span class="dict-kana">バッジ</span></dt>
+              <dd>アイコンなどの角に付く小さな印。未読の数や「NEW」などの状態を知らせる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>制服やかばんにつける「バッジ」から。小さな印1つで「新着あり」などの状態を知らせる。</dd>
+            </div>
+            <div class="dict-item" id="term-avatar">
+              <dt><span class="dict-name">Avatar</span> <span class="dict-kana">アバター</span></dt>
+              <dd>ユーザーを表す小さな丸い画像。画像がないときは名前の頭文字を表示することが多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>サンスクリット語で、神様が地上に現れるときの「化身」のこと。ネットの世界でのあなたの分身。</dd>
+            </div>
+            <div class="dict-item" id="term-spinner">
+              <dt><span class="dict-name">Spinner</span> <span class="dict-kana">スピナー</span></dt>
+              <dd>くるくる回る印。処理中・読み込み中であることを伝える。あとどれくらい待つかは分からない。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>くるくる回る（spin）から。コマのように回り続けて「今がんばってます」と伝える。</dd>
+            </div>
+          </dl>
+        </details>
+        <details class="dict-level level-intermediate">
+          <summary><h3>中級（15語）</h3><span class="muted small">使いやすさに差が出る、画面の構成と状態の部品</span></summary>
+          <dl class="dict-list">
+            <div class="dict-item" id="term-drawer">
+              <dt><span class="dict-name">Drawer</span> <span class="dict-kana">ドロワー</span></dt>
+              <dd>画面の端から引き出しのように滑り出てくるパネル。メニューや詳しい情報を表示する。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>机の「引き出し」。必要なときだけスッと引き出して、使い終わったらしまう。</dd>
+            </div>
+            <div class="dict-item" id="term-popover">
+              <dt><span class="dict-name">Popover</span> <span class="dict-kana">ポップオーバー</span></dt>
+              <dd>ボタンなどを押すと、そのすぐ近くに開く小さなパネル。中にボタンや入力欄など、操作できるものを置ける。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>ボタンの上に「ぽんと（pop）かぶさる（over）」ように出てくるから。</dd>
+            </div>
+            <div class="dict-item" id="term-accordion">
+              <dt><span class="dict-name">Accordion</span> <span class="dict-kana">アコーディオン</span></dt>
+              <dd>見出しを押すと、その下の内容が開いたり閉じたりする部品。「よくある質問」でよく使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>楽器のアコーディオン。蛇腹が伸び縮みするように、内容が開いたり閉じたりする。</dd>
+            </div>
+            <div class="dict-item" id="term-breadcrumb">
+              <dt><span class="dict-name">Breadcrumb</span> <span class="dict-kana">パンくずリスト</span></dt>
+              <dd>「ホーム › カテゴリ › 商品」のように、今いるページまでの道のりを示すリンクの列。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>童話『ヘンゼルとグレーテル』で、帰り道の目印に落としていったパンくずから。来た道をたどって戻れる。</dd>
+            </div>
+            <div class="dict-item" id="term-skeleton">
+              <dt><span class="dict-name">Skeleton screen</span> <span class="dict-kana">スケルトンスクリーン</span></dt>
+              <dd>読み込み中に、実際の内容と同じ形の灰色のブロックを仮に表示するもの。待ち時間を短く感じさせる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>「骸骨・骨組み」のこと。中身（肉）がつく前に、骨組みだけを先に見せておく。</dd>
+            </div>
+            <div class="dict-item" id="term-empty-state">
+              <dt><span class="dict-name">Empty state</span> <span class="dict-kana">エンプティステート</span></dt>
+              <dd>データがまだ1件もないときに表示する画面。何をすればいいかを案内し、最初の操作を促す。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>そのまま「空っぽの状態」。何もない画面を、次にすることの案内板に変える。</dd>
+            </div>
+            <div class="dict-item" id="term-pagination">
+              <dt><span class="dict-name">Pagination</span> <span class="dict-kana">ページネーション</span></dt>
+              <dd>長い一覧をページに分け、「‹ 1 2 3 … ›」のような番号で移動できるようにする部品。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>本にページ番号を振ること（paginate）から。長い一覧を、本のようにページに分ける。</dd>
+            </div>
+            <div class="dict-item" id="term-progress-bar">
+              <dt><span class="dict-name">Progress bar</span> <span class="dict-kana">プログレスバー</span></dt>
+              <dd>処理の進み具合を、横長の棒の伸び具合で示す部品。あとどれくらいで終わるかが分かる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>進み具合（progress）を示す棒（bar）。ゲームの読み込み画面でおなじみ。</dd>
+            </div>
+            <div class="dict-item" id="term-stepper">
+              <dt><span class="dict-name">Stepper</span> <span class="dict-kana">ステッパー</span></dt>
+              <dd>「1 入力 → 2 確認 → 3 完了」のように、手続きの中で今どの段階にいるかを示す部品。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>階段の段（step）から。1段ずつ上るように、手続きを順番に進んでいく。</dd>
+            </div>
+            <div class="dict-item" id="term-chip">
+              <dt><span class="dict-name">Chip (Tag)</span> <span class="dict-kana">チップ（タグ）</span></dt>
+              <dd>短い言葉を角の丸い小さな枠で囲んだ部品。絞り込みの条件やタグを表し、×で外せることも多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>ポーカーのチップのような、小さくて丸っこい札の見た目から。Tag は荷物につける「荷札」のこと。</dd>
+            </div>
+            <div class="dict-item" id="term-banner">
+              <dt><span class="dict-name">Alert banner</span> <span class="dict-kana">アラートバナー</span></dt>
+              <dd>画面の上部や内容の上に帯状に表示するお知らせ。自動では消えず、ユーザーが閉じるまで残ることが多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>お店の横断幕や、中世の旗（banner）から。帯状に大きく掲げて、目立たせる。</dd>
+            </div>
+            <div class="dict-item" id="term-slider">
+              <dt><span class="dict-name">Slider</span> <span class="dict-kana">スライダー</span></dt>
+              <dd>つまみを左右に動かして、決まった範囲の中から数値を選ぶ部品。音量や価格帯の指定に使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>つまみを滑らせる（slide）から。音響機材の音量つまみ（フェーダー）と同じ動き。</dd>
+            </div>
+            <div class="dict-item" id="term-sidebar">
+              <dt><span class="dict-name">Sidebar</span> <span class="dict-kana">サイドバー</span></dt>
+              <dd>画面の左右どちらかに常に表示されている縦長の領域。管理画面のメニューなどに使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>新聞や雑誌で、本文の横に置かれる囲み記事を「サイドバー」と呼んだことから。</dd>
+            </div>
+            <div class="dict-item" id="term-carousel">
+              <dt><span class="dict-name">Carousel</span> <span class="dict-kana">カルーセル</span></dt>
+              <dd>複数の画像やカードを横に並べ、矢印やスワイプで1枚ずつ切り替えて見せる部品。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>遊園地のメリーゴーラウンドのこと（英語で carousel）。ぐるぐる回って、次々に新しいものが目の前に来る。</dd>
+            </div>
+            <div class="dict-item" id="term-fab">
+              <dt><span class="dict-name">Floating action button (FAB)</span> <span class="dict-kana">フローティングアクションボタン</span></dt>
+              <dd>画面の右下などに浮かんだまま固定される丸いボタン。その画面で一番よく使う操作を置く。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>画面の上に「浮かんでいる（floating）」ボタンだから。スクロールしても、ぷかぷかとその場に浮いたまま。</dd>
+            </div>
+          </dl>
+        </details>
+        <details class="dict-level level-advanced">
+          <summary><h3>上級（12語）</h3><span class="muted small">大きなアプリや業務ツールで使う、一歩進んだ部品</span></summary>
+          <dl class="dict-list">
+            <div class="dict-item" id="term-combobox">
+              <dt><span class="dict-name">Combobox</span> <span class="dict-kana">コンボボックス</span></dt>
+              <dd>文字を入力すると候補が絞り込まれ、その一覧から選べる入力欄。入力欄とDropdownを合わせたもの。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>combination（組み合わせ）の box。入力欄と選択肢の一覧を「合体」させた箱。</dd>
+            </div>
+            <div class="dict-item" id="term-segmented">
+              <dt><span class="dict-name">Segmented control</span> <span class="dict-kana">セグメンテッドコントロール</span></dt>
+              <dd>2〜5個ほどの選択肢を一続きにつなげたボタン。1つを選ぶと、同じ内容の表示方法がすぐ切り替わる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>1本のボタンを、いくつかの区切り（segment）に分けたもの。みかんの房も英語では segment。</dd>
+            </div>
+            <div class="dict-item" id="term-command-palette">
+              <dt><span class="dict-name">Command palette</span> <span class="dict-kana">コマンドパレット</span></dt>
+              <dd>キー操作（⌘K など）で呼び出す検索窓。機能やページの名前を打つだけで、すぐに実行・移動できる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>画家のパレットに絵の具が並ぶように、命令（command）がずらりと並ぶから。好きなものをさっと選べる。</dd>
+            </div>
+            <div class="dict-item" id="term-infinite-scroll">
+              <dt><span class="dict-name">Infinite scroll</span> <span class="dict-kana">無限スクロール</span></dt>
+              <dd>一覧の一番下まで来ると、自動で続きを読み込んで足していく仕組み。SNSのタイムラインなどで使う。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>そのまま「終わりのないスクロール」。底が見えない井戸のように、下へ下へと続いていく。</dd>
+            </div>
+            <div class="dict-item" id="term-bottom-sheet">
+              <dt><span class="dict-name">Bottom sheet</span> <span class="dict-kana">ボトムシート</span></dt>
+              <dd>スマホの画面の下からせり上がってくるパネル。追加の選択肢や詳しい情報を表示する。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>画面の底（bottom）から、紙（sheet）が1枚スッとせり上がってくるイメージ。</dd>
+            </div>
+            <div class="dict-item" id="term-context-menu">
+              <dt><span class="dict-name">Context menu</span> <span class="dict-kana">コンテキストメニュー</span></dt>
+              <dd>右クリックや長押しをした場所に出る操作の一覧。押した対象に合わせた操作（名前の変更・削除など）を出す。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>context は「文脈・その場の状況」。右クリックした物に合わせて、中身が変わる気の利くメニュー。</dd>
+            </div>
+            <div class="dict-item" id="term-data-table">
+              <dt><span class="dict-name">Data table</span> <span class="dict-kana">データテーブル</span></dt>
+              <dd>行と列でたくさんのデータを並べる表。並べ替え・絞り込み・行の選択などの機能を持つことが多い。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>データを並べた「表（table）」。table は元々、物を広げる平らな板のこと。そこに数字を広げて見る。</dd>
+            </div>
+            <div class="dict-item" id="term-split-button">
+              <dt><span class="dict-name">Split button</span> <span class="dict-kana">スプリットボタン</span></dt>
+              <dd>よく使う操作のボタンと、▼で別の操作を選べる部分が1つにつながったボタン。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>1つのボタンを2つに「割った（split）」から。左半分は即実行、右半分は「ほかにもあるよ」。</dd>
+            </div>
+            <div class="dict-item" id="term-tree-view">
+              <dt><span class="dict-name">Tree view</span> <span class="dict-kana">ツリービュー</span></dt>
+              <dd>フォルダのように階層になった項目を、▶で開いたり閉じたりしながら表示する部品。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>幹から枝が分かれる木（tree）の形。画面では、根っこを上にした逆さまの木になっている。</dd>
+            </div>
+            <div class="dict-item" id="term-sticky-header">
+              <dt><span class="dict-name">Sticky header</span> <span class="dict-kana">スティッキーヘッダー</span></dt>
+              <dd>スクロールしても画面の上端に貼り付いたまま残るヘッダー。どこまで読んでもメニューを使える。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>付箋（sticky note）のように、画面の上にペタッと貼りついて離れないから。</dd>
+            </div>
+            <div class="dict-item" id="term-inline-validation">
+              <dt><span class="dict-name">Inline validation</span> <span class="dict-kana">インラインバリデーション</span></dt>
+              <dd>入力欄ごとに、入力した直後にその場で内容が正しいかを確かめ、欄のすぐ下にエラーやOKを表示する仕組み。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>in line は「その行の中で」、validation は「正しいかの確認」。入力したその場で、すぐに答え合わせをしてくれる。</dd>
+            </div>
+            <div class="dict-item" id="term-mega-menu">
+              <dt><span class="dict-name">Mega menu</span> <span class="dict-kana">メガメニュー</span></dt>
+              <dd>ナビゲーションの項目にカーソルを乗せると開く大きなメニュー。たくさんのリンクを列に分けて一度に見せる。</dd>
+              <dd class="dict-origin"><span>名前の由来</span>mega は「巨大な」。ふつうのメニューの何倍も大きく広がるから。</dd>
+            </div>
+          </dl>
+        </details>
+        <!-- dictionary:end -->
+      </div>
+    </section>
+
     <script src="js/data.js"></script>
     <script src="js/engine.js"></script>
     <script src="js/demos.js"></script>
