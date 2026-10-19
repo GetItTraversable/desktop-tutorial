@@ -117,7 +117,9 @@ h2:focus {
 .container {
   max-width: 780px;
   margin: 0 auto;
-  padding: 24px 16px 64px;
+  padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 
 h1 {

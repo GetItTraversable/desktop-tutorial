@@ -102,8 +102,19 @@
     const review = app.querySelector("[data-review]");
     if (review) review.addEventListener("click", () => startQuiz("all", "review"));
     app.querySelector("[data-glossary]").addEventListener("click", () => renderGlossary("all"));
-    app.querySelector("[data-reset]").addEventListener("click", () => {
-      if (!confirm("これまでの学習記録をすべて消します。よろしいですか？")) return;
+    // confirm() が使えない環境もあるので、2回押しで確認する
+    const reset = app.querySelector("[data-reset]");
+    let armed = null;
+    reset.addEventListener("click", () => {
+      if (!armed) {
+        reset.textContent = "本当に消す場合は、もう一度押してください";
+        armed = setTimeout(() => {
+          armed = null;
+          reset.textContent = "学習記録をリセット";
+        }, 4000);
+        return;
+      }
+      clearTimeout(armed);
       progress = {};
       saveProgress(progress);
       renderHome();
@@ -159,9 +170,8 @@
     `);
 
     if (q.type === "visual") demos.render(q.termId, app.querySelector("[data-stage]"));
-    app.querySelector("[data-quit]").addEventListener("click", () => {
-      if (session.answers.length === 0 || confirm("ここでやめますか？ここまでの記録は保存されています。")) renderHome();
-    });
+    // 回答はその都度保存しているので、確認なしでホームに戻ってよい
+    app.querySelector("[data-quit]").addEventListener("click", renderHome);
     app.querySelectorAll(".option").forEach((b) => b.addEventListener("click", () => answer(b.dataset.id)));
   }
 
@@ -224,7 +234,13 @@
           await navigator.clipboard.writeText(b.dataset.copy);
           b.textContent = "コピーしました";
         } catch (e) {
-          b.textContent = "コピーできませんでした";
+          // コピーできない環境では、文を選択して手動でコピーしてもらう
+          const text = b.closest(".prompt-box").querySelector(".prompt-text");
+          const range = document.createRange();
+          range.selectNodeContents(text);
+          getSelection().removeAllRanges();
+          getSelection().addRange(range);
+          b.textContent = "選択しました";
         }
         setTimeout(() => (b.textContent = "コピー"), 1600);
       })
